@@ -1,0 +1,56 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  theme: {
+    extend: {
+      colors: {
+        forest: {
+          50: "#f2f6f3",
+          100: "#dfe9e1",
+          200: "#bcd3c1",
+          300: "#8fb599",
+          400: "#5f9270",
+          500: "#3f7551",
+          600: "#2d5c3e",
+          700: "#234a33",
+          800: "#1c3b29",
+          900: "#152e20",
+          950: "#0b1a12",
+        },
+        olive: {
+          50: "#f6f6ef",
+          100: "#e9e9d6",
+          200: "#d3d3ae",
+          300: "#b6b87f",
+          400: "#9da057",
+          500: "#82863f",
+          600: "#656832",
+          700: "#4f5129",
+          800: "#3f4123",
+          900: "#35361f",
+          950: "#1c1d10",
+        },
+        mustard: {
+          50: "#fdf9ed",
+          100: "#faf0c8",
+          200: "#f5e08d",
+          300: "#efca53",
+          400: "#e9b52b",
+          500: "#d99a1a",
+          600: "#bc7714",
+          700: "#965714",
+          800: "#7b4517",
+          900: "#683a18",
+          950: "#3c1e0a",
+        },
+        cream: "#faf8f2",
+      },
+      fontFamily: {
+        display: ["Fraunces", "serif"],
+        body: ["Inter", "sans-serif"],
+        mono: ["IBM Plex Mono", "monospace"],
+      },
+    },
+  },
+  plugins: [],
+};
