@@ -7,6 +7,7 @@ import Directors from "../components/home/Directors";
 import GalleryPreview from "../components/home/GalleryPreview";
 import Certifications from "../components/home/Certifications";
 import ContactCTA from "../components/home/ContactCTA";
+import ProcessStrip from "../components/gallery/ProcessStrip";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
           <Directors />
            <GalleryPreview />
            <Certifications />
+           <ProcessStrip />
             <ContactCTA />
     </>
   );

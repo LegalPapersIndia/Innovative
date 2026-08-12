@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import gherkins from "../../assets/products/hero-farm.jpg";
-import chillis from "../../assets/products/hero-farm.jpg";
-import babyCorn from "../../assets/products/hero-farm.jpg";
-import peppers from "../../assets/products/hero-farm.jpg";
-import jalapeno from "../../assets/products/hero-farm.jpg";
-import cauliflower from "../../assets/products/hero-farm.jpg";
-import carrots from "../../assets/products/hero-farm.jpg";
-import mixedVeg from "../../assets/products/hero-farm.jpg";
+import chillis from "../../assets/products/chillis.jpg";
+import babyCorn from "../../assets/products/BabyCorn.webp";
+import peppers from "../../assets/products/Peppers.webp";
+import jalapeno from "../../assets/products/Jalapeno.jpg";
+import cauliflower from "../../assets/products/Cauliflower.webp";
+import carrots from "../../assets/products/Carrots.webp";
+import mixedVeg from "../../assets/products/Mixed.jpg";
 
 const products = [
   { name: "Gherkins", slug: "gherkins", image: gherkins, tag: "Best Seller" },
