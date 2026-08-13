@@ -1,5 +1,5 @@
 {
-  "name": "billflow-backend",
+  "name": "backend",
   "version": "1.0.0",
   "description": "BillFlow - Legal Papers India Billing Software Backend",
   "main": "server.js",

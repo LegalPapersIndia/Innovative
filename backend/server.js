@@ -4,12 +4,9 @@ import cors from "cors";
 import connectDB from "./config/db.js";
 import cloudinaryConnect from "./config/cloudinary.js";
 import authRoutes from "./routes/authRoutes.js";
-import businessSettingsRoutes from "./routes/businessSettingsRoutes.js";
-import contactRoutes from "./routes/contactRoutes.js";
-import itemRoutes from "./routes/itemRoutes.js";
-import salesInvoiceRoutes from "./routes/salesInvoiceRoutes.js";
-import purchaseInvoiceRoutes from "./routes/purchaseInvoiceRoutes.js";
-import quotationRoutes from "./routes/quotationRoutes.js";
+import productRoutes from "./routes/productRoutes.js";
+import galleryRoutes from "./routes/galleryRoutes.js";
+import enquiryRoutes from "./routes/enquiryRoutes.js";
 
 dotenv.config();
 connectDB();
@@ -17,19 +14,21 @@ cloudinaryConnect();
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [process.env.CLIENT_URL, process.env.ADMIN_URL],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);
-app.use("/api/business-settings", businessSettingsRoutes);
-app.use("/api/contacts", contactRoutes);
-app.use("/api/items", itemRoutes);
-app.use("/api/sales-invoice", salesInvoiceRoutes);
-app.use("/api/purchase-invoice", purchaseInvoiceRoutes);
-app.use("/api/quotation", quotationRoutes);
+app.use("/api/products", productRoutes);
+app.use("/api/gallery", galleryRoutes);
+app.use("/api/enquiries", enquiryRoutes);
 
 app.get("/", (req, res) => {
-  res.send("BillFlow API is running...");
+  res.send("Innovative Nature Picks API is running...");
 });
 
 const PORT = process.env.PORT || 5000;
