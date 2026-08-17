@@ -23,9 +23,18 @@ const productSchema = new mongoose.Schema(
       type: String, // e.g. "Best Seller" — optional
       trim: true,
     },
-    image: {
-      url: { type: String, required: true },
-      public_id: { type: String, required: true },
+   images: {
+      type: [
+        {
+          url: { type: String, required: true },
+          public_id: { type: String, required: true },
+        },
+      ],
+      required: true,
+      validate: {
+        validator: (arr) => arr.length > 0 && arr.length <= 4,
+        message: "Product must have between 1 and 4 images",
+      },
     },
     shortDescription: {
       type: String,

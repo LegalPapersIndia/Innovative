@@ -172,7 +172,7 @@ const Certifications = () => {
             >
               <div
                 onClick={() => setActiveIndex(i)}
-                className="relative aspect-[4/3] overflow-hidden bg-gray-50 flex items-center justify-center cursor-pointer"
+                className="relative aspect-4/3 overflow-hidden bg-gray-50 flex items-center justify-center cursor-pointer"
               >
                 <img
                   src={cert.image}
@@ -218,7 +218,7 @@ const Certifications = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             onClick={closeLightbox}
-            className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8"
+            className="fixed inset-0 z-100 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8"
           >
             <button
               onClick={closeLightbox}

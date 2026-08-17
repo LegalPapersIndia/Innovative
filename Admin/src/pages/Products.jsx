@@ -118,10 +118,10 @@ const Products = () => {
                   >
                     <td className="px-6 py-4">
                       <img
-                        src={product.image.url}
-                        alt={product.name}
-                        className="w-12 h-12 rounded-lg object-cover"
-                      />
+  src={product.images?.[0]?.url}
+  alt={product.name}
+  className="w-12 h-12 rounded-lg object-cover"
+/>
                     </td>
                     <td className="px-6 py-4">
                       <p className="font-medium text-green-950">{product.name}</p>

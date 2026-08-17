@@ -6,7 +6,7 @@ import { uploadToCloudinary, deleteFromCloudinary } from "../utils/cloudinary.ut
 // @access  Public
 export const getGalleryImages = async (req, res) => {
   try {
-    const images = await Gallery.find({ isActive: true }).sort({ createdAt: -1 });
+    const images = await Gallery.find({ isActive: true }).sort({ createdAt: 1 });
     res.status(200).json({ success: true, images });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });

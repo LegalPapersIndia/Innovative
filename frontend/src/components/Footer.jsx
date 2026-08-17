@@ -45,7 +45,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-green-950 overflow-hidden">
       {/* Decorative glow */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-400/5 rounded-full blur-3xl -z-0" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-400/5 rounded-full blur-3xl z-0" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-10">
         {/* Top grid */}

@@ -8,12 +8,12 @@ const ContactCTA = () => {
       <motion.div
         animate={{ x: [0, 30, 0], y: [0, 20, 0] }}
         transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-10 left-10 w-72 h-72 bg-amber-400/10 rounded-full blur-3xl -z-0"
+        className="absolute top-10 left-10 w-72 h-72 bg-amber-400/10 rounded-full blur-3xl z-0"
       />
       <motion.div
         animate={{ x: [0, -40, 0], y: [0, -20, 0] }}
         transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-10 right-10 w-96 h-96 bg-green-400/10 rounded-full blur-3xl -z-0"
+        className="absolute bottom-10 right-10 w-96 h-96 bg-green-400/10 rounded-full blur-3xl z-0"
       />
 
       <div className="relative w-full px-4 sm:px-6 lg:px-8">
@@ -25,12 +25,12 @@ const ContactCTA = () => {
           className="relative w-full bg-green-950 rounded-3xl overflow-hidden px-6 sm:px-12 py-10 sm:py-12 text-center shadow-2xl"
         >
           {/* Inner decorative glow */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-amber-400/10 rounded-full blur-3xl -z-0" />
-          <div className="absolute bottom-0 left-0 w-64 h-64 bg-green-400/10 rounded-full blur-3xl -z-0" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-amber-400/10 rounded-full blur-3xl z-0" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-green-400/10 rounded-full blur-3xl z-0" />
 
           {/* Subtle grid texture */}
           <div
-            className="absolute inset-0 opacity-[0.04] -z-0"
+            className="absolute inset-0 opacity-[0.04] z-0"
             style={{
               backgroundImage:
                 "linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)",
@@ -72,7 +72,7 @@ const ContactCTA = () => {
                     size={19}
                     className="relative z-10 group-hover:translate-x-1 transition-transform duration-300"
                   />
-                  <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
+                  <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-linear-to-r from-transparent via-white/40 to-transparent skew-x-12" />
                 </motion.a>
 
                <div className="flex flex-col items-start gap-2.5">
@@ -88,7 +88,7 @@ const ContactCTA = () => {
     className="group flex items-center gap-3 text-white/60 hover:text-amber-400 text-sm transition-colors duration-300"
   >
     <Phone size={15} className="text-amber-400 shrink-0 w-4" />
-    <span>+91-1352-7166</span>
+    <span>+91-1352-7166, +91-9741735606, <br/>+91-90008065456</span>
   </a>
   <span className="flex items-center gap-3 text-white/60 text-sm">
     <MapPin size={15} className="text-amber-400 shrink-0 w-4" />
