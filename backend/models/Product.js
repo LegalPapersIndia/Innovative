@@ -23,7 +23,7 @@ const productSchema = new mongoose.Schema(
       type: String, // e.g. "Best Seller" — optional
       trim: true,
     },
-   images: {
+    images: {
       type: [
         {
           url: { type: String, required: true },
@@ -44,6 +44,12 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+        whyChoosePoints: [
+      {
+        title: { type: String, required: true },
+        text: { type: String, required: true },
+      },
+    ],
     specs: [
       {
         label: { type: String, required: true },

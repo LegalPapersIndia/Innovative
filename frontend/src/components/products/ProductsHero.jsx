@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
-import bannerImage from "../../assets/hero-farm.jpg";
+import bannerImage from "../../assets/product.jpg";
 
 const ProductsHero = () => {
   return (

@@ -188,9 +188,9 @@ const AboutContent = () => {
               <img
                 src={storyImages[0].src}
                 alt={storyImages[0].caption}
-                className="w-full h-full min-h-[280px] sm:min-h-[360px] md:min-h-[420px] object-cover transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-full min-h-70 sm:min-h-90 md:min-h-105 object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-green-950/70 via-green-950/10 to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-linear-to-t from-green-950/70 via-green-950/10 to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-400">
                 <Expand size={15} className="text-white" />
               </div>
@@ -333,7 +333,7 @@ const AboutContent = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             onClick={closeLightbox}
-            className="fixed inset-0 z-[100] bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8"
+            className="fixed inset-0 z-100 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8"
           >
             <button
               onClick={closeLightbox}
@@ -373,7 +373,7 @@ const AboutContent = () => {
                 alt={storyImages[activeIndex].caption}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-green-950/90 to-transparent p-6">
+              <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-green-950/90 to-transparent p-6">
                 <p className="font-display text-xl text-white italic">
                   {storyImages[activeIndex].caption}
                 </p>

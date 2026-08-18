@@ -22,6 +22,7 @@ const Home = () => {
            <Certifications />
            <ProcessStrip />
             <ContactCTA />
+            
     </>
   );
 };

@@ -1,3 +1,6 @@
+
+
+
 // import Product from "../models/Product.js";
 // import { uploadToCloudinary, deleteFromCloudinary } from "../utils/cloudinary.utils.js";
 
@@ -6,7 +9,7 @@
 // // @access  Public
 // export const getProducts = async (req, res) => {
 //   try {
-//     const products = await Product.find({ isActive: true }).sort({ createdAt: -1 });
+//     const products = await Product.find({ isActive: true }).sort({ createdAt: 1 });
 //     res.status(200).json({ success: true, products });
 //   } catch (error) {
 //     res.status(500).json({ success: false, message: error.message });
@@ -56,8 +59,8 @@
 //       exportRegions,
 //     } = req.body;
 
-//     if (!req.file) {
-//       return res.status(400).json({ success: false, message: "Product image is required" });
+//     if (!req.files || req.files.length === 0) {
+//       return res.status(400).json({ success: false, message: "At least one product image is required" });
 //     }
 
 //     const existingSlug = await Product.findOne({ slug });
@@ -65,14 +68,18 @@
 //       return res.status(400).json({ success: false, message: "Slug already exists" });
 //     }
 
-//     const result = await uploadToCloudinary(req.file.buffer, "inp-website/products");
+//     const uploadedImages = [];
+//     for (const file of req.files) {
+//       const result = await uploadToCloudinary(file.buffer, "inp-website/products");
+//       uploadedImages.push({ url: result.secure_url, public_id: result.public_id });
+//     }
 
 //     const product = await Product.create({
 //       name,
 //       slug,
 //       category,
 //       tag,
-//       image: { url: result.secure_url, public_id: result.public_id },
+//       images: uploadedImages,
 //       shortDescription,
 //       description,
 //       specs: specs ? JSON.parse(specs) : [],
@@ -115,10 +122,18 @@
 //       product.slug = slug;
 //     }
 
-//     if (req.file) {
-//       await deleteFromCloudinary(product.image.public_id);
-//       const result = await uploadToCloudinary(req.file.buffer, "inp-website/products");
-//       product.image = { url: result.secure_url, public_id: result.public_id };
+//     // If new images uploaded, replace all old images
+//     if (req.files && req.files.length > 0) {
+//       for (const img of product.images) {
+//         await deleteFromCloudinary(img.public_id);
+//       }
+
+//       const uploadedImages = [];
+//       for (const file of req.files) {
+//         const result = await uploadToCloudinary(file.buffer, "inp-website/products");
+//         uploadedImages.push({ url: result.secure_url, public_id: result.public_id });
+//       }
+//       product.images = uploadedImages;
 //     }
 
 //     if (name) product.name = name;
@@ -148,7 +163,9 @@
 //       return res.status(404).json({ success: false, message: "Product not found" });
 //     }
 
-//     await deleteFromCloudinary(product.image.public_id);
+//     for (const img of product.images) {
+//       await deleteFromCloudinary(img.public_id);
+//     }
 //     await product.deleteOne();
 
 //     res.status(200).json({ success: true, message: "Product deleted" });
@@ -156,7 +173,6 @@
 //     res.status(500).json({ success: false, message: error.message });
 //   }
 // };
-
 
 
 
@@ -217,6 +233,7 @@ export const createProduct = async (req, res) => {
       description,
       specs,
       exportRegions,
+      whyChoosePoints,
     } = req.body;
 
     if (!req.files || req.files.length === 0) {
@@ -244,6 +261,7 @@ export const createProduct = async (req, res) => {
       description,
       specs: specs ? JSON.parse(specs) : [],
       exportRegions: exportRegions ? JSON.parse(exportRegions) : [],
+      whyChoosePoints: whyChoosePoints ? JSON.parse(whyChoosePoints) : [],
     });
 
     res.status(201).json({ success: true, message: "Product created", product });
@@ -271,6 +289,7 @@ export const updateProduct = async (req, res) => {
       description,
       specs,
       exportRegions,
+      whyChoosePoints,
       isActive,
     } = req.body;
 
@@ -303,6 +322,7 @@ export const updateProduct = async (req, res) => {
     if (description) product.description = description;
     if (specs) product.specs = JSON.parse(specs);
     if (exportRegions) product.exportRegions = JSON.parse(exportRegions);
+    if (whyChoosePoints) product.whyChoosePoints = JSON.parse(whyChoosePoints);
     if (isActive !== undefined) product.isActive = isActive;
 
     await product.save();
