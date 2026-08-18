@@ -28,8 +28,8 @@ const ProcessStrip = () => {
   return (
     <section className="relative py-20 sm:py-24 bg-green-950 overflow-hidden">
       {/* Decorative glow */}
-      <div className="absolute top-0 left-1/3 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl -z-0" />
-      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-green-400/10 rounded-full blur-3xl -z-0" />
+      <div className="absolute top-0 left-1/3 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl z-0" />
+      <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-green-400/10 rounded-full blur-3xl z-0" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -60,7 +60,7 @@ const ProcessStrip = () => {
               whileInView={{ scaleX: 1 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 1.2, ease: "easeInOut" }}
-              className="h-px bg-gradient-to-r from-amber-400/60 via-amber-400 to-amber-400/60 origin-left"
+              className="h-px bg-linear-to-r from-amber-400/60 via-amber-400 to-amber-400/60 origin-left"
             />
           </div>
 
@@ -79,7 +79,7 @@ const ProcessStrip = () => {
                   <motion.div
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     transition={{ duration: 0.3 }}
-                    className="relative z-10 w-[72px] h-[72px] rounded-2xl bg-green-900 border-2 border-amber-400/30 group-hover:border-amber-400 flex items-center justify-center transition-colors duration-400 shadow-lg"
+                    className="relative z-10 w-18 h-18 rounded-2xl bg-green-900 border-2 border-amber-400/30 group-hover:border-amber-400 flex items-center justify-center transition-colors duration-400 shadow-lg"
                   >
                     <step.icon size={28} className="text-amber-400" />
                   </motion.div>
@@ -91,14 +91,14 @@ const ProcessStrip = () => {
                 <h3 className="font-display text-xl font-medium text-white mb-2">
                   {step.title}
                 </h3>
-                <p className="text-white/50 text-sm leading-relaxed max-w-[220px] mx-auto">
+                <p className="text-white/50 text-sm leading-relaxed max-w-55 mx-auto">
                   {step.text}
                 </p>
 
                 {/* Arrow connector — mobile/tablet only, between items */}
                 {i !== steps.length - 1 && (
                   <div className="sm:hidden flex justify-center mt-6">
-                    <div className="w-px h-8 bg-gradient-to-b from-amber-400/60 to-transparent" />
+                    <div className="w-px h-8 bg-linear-to-b from-amber-400/60 to-transparent" />
                   </div>
                 )}
               </motion.div>

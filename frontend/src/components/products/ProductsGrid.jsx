@@ -100,7 +100,7 @@
 //                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
 //                     />
 
-//                     <div className="absolute inset-0 bg-gradient-to-t from-green-950/85 via-green-950/10 to-transparent" />
+//                     <div className="absolute inset-0 bg-linear-to-t from-green-950/85 via-green-950/10 to-transparent" />
 //                     <div className="absolute inset-0 bg-green-950/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
 //                     {product.tag && (

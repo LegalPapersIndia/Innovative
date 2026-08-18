@@ -131,7 +131,7 @@ const Hero = () => {
             </div>
             <div className="relative flex-1 h-px bg-white/20 overflow-hidden">
               <motion.div
-                className="absolute top-0 left-0 h-px w-8 bg-gradient-to-r from-transparent via-amber-400 to-transparent"
+                className="absolute top-0 left-0 h-px w-8 bg-linear-to-r from-transparent via-amber-400 to-transparent"
                 animate={{ x: ["-10%", "110%"] }}
                 transition={{ duration: 2.5, repeat: Infinity, ease: "linear" }}
               />

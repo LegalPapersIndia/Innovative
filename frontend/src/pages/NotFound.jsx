@@ -22,7 +22,7 @@ const NotFound = () => {
         className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage:
-            "linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)",
+            "linear-linear(white 1px, transparent 1px), linear-linear(90deg, white 1px, transparent 1px)",
           backgroundSize: "48px 48px",
         }}
       />
@@ -63,7 +63,7 @@ const NotFound = () => {
             size={18}
             className="relative z-10 group-hover:translate-x-1 transition-transform duration-300"
           />
-          <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12" />
+          <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-linear-to-r from-transparent via-white/40 to-transparent skew-x-12" />
         </Link>
       </motion.div>
     </section>

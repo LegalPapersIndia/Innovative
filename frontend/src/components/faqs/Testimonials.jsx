@@ -31,8 +31,8 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="relative py-24 sm:py-32 bg-green-950 overflow-hidden">
-      <div className="absolute top-0 left-0 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl -z-0" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-400/10 rounded-full blur-3xl -z-0" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl z-0" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-400/10 rounded-full blur-3xl z-0" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}

@@ -109,7 +109,7 @@
 //                 alt={image.caption}
 //                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
 //               />
-//               <div className="absolute inset-0 bg-gradient-to-t from-green-950/85 via-green-950/10 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
+//               <div className="absolute inset-0 bg-linear-to-t from-green-950/85 via-green-950/10 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
 
 //               <div className="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-400">
 //                 <Expand size={15} className="text-white" />
@@ -192,7 +192,7 @@
 //                 alt={images[activeIndex].caption}
 //                 className="w-full h-full object-cover"
 //               />
-//               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-green-950/90 to-transparent p-6">
+//               <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-green-950/90 to-transparent p-6">
 //                 <p className="font-display text-xl text-white italic">
 //                   {images[activeIndex].caption}
 //                 </p>

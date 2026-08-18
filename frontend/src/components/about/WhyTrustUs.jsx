@@ -28,8 +28,8 @@ const WhyTrustUs = () => {
   return (
     <section className="relative py-24 sm:py-32 bg-cream overflow-hidden" style={{ backgroundColor: "#faf8f2" }}>
       {/* Decorative glow */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl -z-0" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-green-400/10 rounded-full blur-3xl -z-0" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl z-0" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-green-400/10 rounded-full blur-3xl z-0" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -73,7 +73,7 @@ const WhyTrustUs = () => {
                 0{i + 1}
               </span>
 
-              <div className="relative w-13 h-13 w-12 h-12 rounded-xl bg-green-800 group-hover:bg-amber-400 flex items-center justify-center mb-5 transition-colors duration-400">
+              <div className="relative w-13 h-13  rounded-xl bg-green-800 group-hover:bg-amber-400 flex items-center justify-center mb-5 transition-colors duration-400">
                 <item.icon
                   size={22}
                   className="text-white group-hover:text-green-950 transition-colors duration-400"

@@ -117,7 +117,7 @@ const ProductDetailInfo = ({ product }) => {
             className="lg:sticky lg:top-24"
           >
             <div className="bg-green-950 rounded-2xl p-7 sm:p-8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-amber-400/10 rounded-full blur-3xl -z-0" />
+              <div className="absolute top-0 right-0 w-40 h-40 bg-amber-400/10 rounded-full blur-3xl z-0" />
               <h3 className="relative font-display text-xl text-white mb-6">
                 Specifications
               </h3>

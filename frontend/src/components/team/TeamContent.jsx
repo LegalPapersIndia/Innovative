@@ -63,13 +63,13 @@ const TeamContent = () => {
               transition={{ duration: 0.6, delay: i * 0.15 }}
               className="group relative rounded-2xl overflow-hidden shadow-lg"
             >
-              <div className="relative aspect-[4/5] overflow-hidden">
+              <div className="relative aspect-4/5 overflow-hidden">
                 <img
                   src={person.photo}
                   alt={person.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-green-950/95 via-green-950/40 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-green-950/95 via-green-950/40 to-transparent" />
 
                 {/* Social icons — slide up on hover */}
                 <div className="absolute bottom-28 left-0 right-0 flex justify-center gap-3 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-400">
@@ -109,7 +109,7 @@ const TeamContent = () => {
           transition={{ duration: 0.6 }}
           className="mt-20 rounded-2xl bg-green-950 px-8 sm:px-12 py-12 text-center relative overflow-hidden"
         >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-amber-400/10 rounded-full blur-3xl -z-0" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-amber-400/10 rounded-full blur-3xl z-0" />
           <div className="relative">
             <Mail size={28} className="text-amber-400 mx-auto mb-5" />
             <h3 className="font-display text-2xl sm:text-3xl text-white mb-3">

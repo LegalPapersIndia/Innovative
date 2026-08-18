@@ -39,7 +39,7 @@
 //                 alt="Vegetable processing unit"
 //                 className="w-full h-[420px] sm:h-[480px] lg:h-[540px] object-cover"
 //               />
-//               <div className="absolute inset-0 bg-gradient-to-t from-green-950/40 via-transparent to-transparent" />
+//               <div className="absolute inset-0 bg-linear-to-t from-green-950/40 via-transparent to-transparent" />
 //             </div>
 
 //             {/* Floating stat card */}
@@ -173,7 +173,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7 }}
-            className="relative h-[520px] sm:h-[560px]"
+            className="relative h-130 sm:h-140"
           >
             {/* Decorative blurred accents */}
             <div className="absolute -top-8 -left-8 w-32 h-32 rounded-full bg-amber-400/20 blur-3xl -z-10" />
@@ -190,7 +190,7 @@ const About = () => {
                 alt="Vegetable processing unit"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-green-950/60 via-green-950/0 to-green-950/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-linear-to-t from-green-950/60 via-green-950/0 to-green-950/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                 <p className="text-white font-display text-lg italic">Processing Unit</p>
               </div>
@@ -207,7 +207,7 @@ const About = () => {
                 alt="Farm fields"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-green-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-linear-to-t from-green-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
 
             {/* Small image — bottom right, lower */}
@@ -221,7 +221,7 @@ const About = () => {
                 alt="Fresh gherkins"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-green-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-linear-to-t from-green-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </motion.div>
 
             {/* Wide image — bottom left */}
@@ -230,7 +230,7 @@ const About = () => {
               transition={{ duration: 0.4, ease: "easeOut" }}
               className="group absolute bottom-0 left-0 w-[62%] h-[24%] rounded-2xl overflow-hidden shadow-xl cursor-pointer bg-green-900"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-green-900 to-green-800" />
+              <div className="absolute inset-0 bg-linear-to-r from-green-900 to-green-800" />
               <div className="relative h-full flex items-center justify-center px-4">
                 <p className="font-mono text-3xl sm:text-4xl font-semibold text-amber-400">
                   20+

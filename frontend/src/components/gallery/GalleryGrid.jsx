@@ -138,7 +138,7 @@
 //                   loading="lazy"
 //                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
 //                 />
-//                 <div className="absolute inset-0 bg-gradient-to-t from-green-950/85 via-green-950/10 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
+//                 <div className="absolute inset-0 bg-linear-to-t from-green-950/85 via-green-950/10 to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
 
 //                 <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-mono uppercase tracking-wider text-green-800 opacity-0 group-hover:opacity-100 transition-opacity duration-400">
 //                   {image.category}
@@ -210,7 +210,7 @@
 //                 alt={filteredImages[activeIndex].caption}
 //                 className="w-full h-full object-cover"
 //               />
-//               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-green-950/90 to-transparent p-6">
+//               <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-green-950/90 to-transparent p-6">
 //                 <p className="font-mono text-[10px] tracking-widest uppercase text-amber-300 mb-1">
 //                   {filteredImages[activeIndex].category}
 //                 </p>

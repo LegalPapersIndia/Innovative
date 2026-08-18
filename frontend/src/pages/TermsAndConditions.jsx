@@ -54,14 +54,14 @@ const TermsAndConditions = () => {
   return (
     <>
       {/* Header banner */}
-     <section className="relative h-[38vh] min-h-[280px] flex items-center overflow-hidden bg-green-950">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl -z-0" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-green-400/10 rounded-full blur-3xl -z-0" />
+     <section className="relative h-[38vh] min-h-70 flex items-center overflow-hidden bg-green-950">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl z-0" />
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-green-400/10 rounded-full blur-3xl z-0" />
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage:
-              "linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)",
+              "linear-linear(white 1px, transparent 1px), linear-linear(90deg, white 1px, transparent 1px)",
             backgroundSize: "48px 48px",
           }}
         />

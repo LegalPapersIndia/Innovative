@@ -103,7 +103,7 @@ const Dashboard = () => {
           className="absolute inset-0 opacity-[0.03] -z-0"
           style={{
             backgroundImage:
-              "linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)",
+              "linear-linear(white 1px, transparent 1px), linear-linear(90deg, white 1px, transparent 1px)",
             backgroundSize: "40px 40px",
           }}
         />

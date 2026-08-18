@@ -29,7 +29,7 @@
 //           className="absolute inset-0 opacity-[0.03]"
 //           style={{
 //             backgroundImage:
-//               "linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)",
+//               "linear-linear(white 1px, transparent 1px), linear-linear(90deg, white 1px, transparent 1px)",
 //             backgroundSize: "48px 48px",
 //           }}
 //         />
@@ -87,7 +87,7 @@
 //                   alt={product.name}
 //                   className="w-full h-full min-h-[280px] sm:min-h-[360px] object-cover transition-transform duration-700 group-hover:scale-110"
 //                 />
-//                 <div className="absolute inset-0 bg-gradient-to-t from-green-950/60 via-green-950/5 to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
+//                 <div className="absolute inset-0 bg-linear-to-t from-green-950/60 via-green-950/5 to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-500" />
 //                 <div className="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-400">
 //                   <Expand size={15} className="text-white" />
 //                 </div>
@@ -219,7 +219,7 @@ const ProductDetailHero = ({ product }) => {
           className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage:
-              "linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)",
+              "linear-linear(white 1px, transparent 1px), linear-linear(90deg, white 1px, transparent 1px)",
             backgroundSize: "48px 48px",
           }}
         />

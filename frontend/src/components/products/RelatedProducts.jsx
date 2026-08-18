@@ -38,7 +38,7 @@
 //                   loading="lazy"
 //                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
 //                 />
-//                 <div className="absolute inset-0 bg-gradient-to-t from-green-950/85 via-green-950/10 to-transparent" />
+//                 <div className="absolute inset-0 bg-linear-to-t from-green-950/85 via-green-950/10 to-transparent" />
 
 //                 <div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/15 backdrop-blur-sm flex items-center justify-center opacity-0 -translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-400">
 //                   <ArrowUpRight size={14} className="text-white" />
