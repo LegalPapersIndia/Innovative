@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
-import director1 from "../../assets/directors/images.jpeg";
-import director2 from "../../assets/directors/images (1).jpeg";
+import director1 from "../../assets/directors/directors.png";
+import director2 from "../../assets/directors/directors1.jpeg";
 
 const directors = [
   {
